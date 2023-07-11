@@ -1,0 +1,34 @@
+.project-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+    margin: auto;
+    margin: 2rem 4rem;
+}
+.project-card{
+    margin: 2rem 0;
+}
+.project-card img{
+    width: 100%;
+    background: rgba(86, 214, 226, 0.1);
+    border-radius: 15px;
+}
+
+.project-title{
+    padding: 1rem 0;
+}
+.pro-details{
+    padding-bottom: 1rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+
+@media screen and (max-width:740px){
+    .project-container{
+        grid-template-columns: 1fr;
+    }
+    .project-container{
+        margin: 2rem;
+    }
+}
