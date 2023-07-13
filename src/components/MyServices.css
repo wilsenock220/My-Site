@@ -1,0 +1,108 @@
+.services{
+    margin: 3rem 4rem;
+}
+.services-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+.services-top h2{
+    font-size: 2.2rem;
+    margin: 1rem 0;
+}
+.services-top p{
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+.service-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    row-gap: 4rem;
+    margin-top: 2rem;
+}
+.service-card{
+    box-shadow: rgba(203, 203, 203, 0.1) 0px 4px 12px;
+    background: white;
+    display: flex;
+    column-gap: 16px;
+    align-items: flex-start;
+    border-radius: 15px;
+    padding: 4rem;
+}
+.service-icon{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    border-radius: 15px;
+    padding: 16px;
+}
+.service-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.service-content h3{
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+.service-content p{
+    font-size: 1.05rem;
+    line-height: 1.6rem;
+}
+
+@media screen and (max-width:1140px){
+    .service-cards{
+        column-gap: 2rem;
+        row-gap: 2rem;
+    }
+    .service-card{
+        align-items: flex-start;
+        padding: 2rem;
+    }
+}
+@media screen and (max-width:900px){
+    .service-card{
+        flex-direction: column;
+        row-gap: 16px;
+        align-items: flex-start;
+        padding: 2rem;
+    }
+}
+@media screen and (max-width:769px){
+    .services{
+        margin: 3rem 1rem;
+    }
+    .service-cards{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 2rem;
+    }
+    .service-content h3{
+        font-size: 1.6rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    .service-content p{
+        font-size: 1.05rem;
+        line-height: 1.6rem;
+    }
+}
+@media screen and (max-width:500px){
+    .service-content h3{
+        font-size: 1.4rem;
+    }
+    .service-content p{
+        font-size: 1rem;
+    }
+    .services-top h2{
+        font-size: 1.8rem;
+    }
+    .services-top p{
+        font-size: 1.05rem;
+    }
+}
