@@ -73,3 +73,9 @@ ul{
 .btn-sec:hover{
   margin-left: 24px;
 }
+
+@media screen and (max-width: 500px){
+  .btn{
+    width: 100%;
+  }
+}

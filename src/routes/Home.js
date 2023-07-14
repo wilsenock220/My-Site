@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection';
 import Footer from '../components/Footer';
 import Article from '../components/Articles';
 import MyServices from '../components/MyServices';
+import HomeAbout from '../components/HomeAbout';
 
 function home() {
     return (
@@ -11,6 +12,7 @@ function home() {
             <Navbar/>
             <HeroSection/>
             <MyServices/>
+            <HomeAbout/>
             <Article/>
             <Footer/>
         </div>
